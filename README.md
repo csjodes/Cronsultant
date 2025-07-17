@@ -2,7 +2,7 @@
 
 Cronsultant is a lightweight, interactive cron expression assistant built to help users write, understand, and preview cron jobs in real time. Inspired by crontab.guru, it features a clean, terminal-style UI with support for natural language parsing, upcoming execution previews, syntax highlighting, and interactive learning tools.
 
-![Cronsultant](cronsultant logo.svg)
+![Cronsultant](cronsultant-logo.svg)
 
 ---
 
@@ -41,14 +41,16 @@ Cronsultant helps developers and system administrators:
 ## Cron Format Guide
 
 Cron jobs follow a 5-part schedule format:
- ┌───────────── minute (0 - 59)
- │ ┌───────────── hour (0 - 23)
- │ │ ┌───────────── day of month (1 - 31)
- │ │ │ ┌───────────── month (1 - 12 or JAN-DEC)
- │ │ │ │ ┌───────────── day of week (0 - 6 or SUN-SAT, where 0 = Sunday)
- │ │ │ │ │
- * * * * *
- 
+```
+* * * * *
+│ │ │ │ │
+│ │ │ │ └─── Day of Week (0 - 6 or SUN–SAT, where 0 = Sunday)
+│ │ │ └───── Month (1 - 12 or JAN–DEC)
+│ │ └─────── Day of Month (1 - 31)
+│ └───────── Hour (0 - 23)
+└─────────── Minute (0 - 59)
+```
+
 Each field controls a specific unit of time:
 
 | Field            | Position | Allowed Values                 | Description                          |
