@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronsultant - About</title>
+    <link rel="icon" href="cronsultant logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="solarized-light">
+    <div class="terminal-window">
+        <div class="window-controls">
+            <div class="control-buttons">
+                <div class="control-button close"></div>
+                <div class="control-button minimize"></div>
+                <div class="control-button maximize"></div>
+            </div>
+            <div class="window-title">
+                <img src="cronsultant logo.svg" alt="Cronsultant Logo" class="window-logo">
+                cronsultant@terminal:~$
+            </div>
+            <div class="window-actions">
+                <button id="theme-toggle" class="action-btn" title="Toggle Theme" style="margin-right: 8px;">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="index.html" class="action-btn" title="Back to Editor">
+                    ←
+                </a>
+            </div>
+        </div>
+
+        <div class="terminal-content">
+            <div class="terminal-header">
+                <div class="logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">Cronsultant</span>
+                    <span class="logo-bracket">]</span>
+                </div>
+                <div class="subtitle">About this terminal-based cron expression editor</div>
+            </div>
+
+            <div class="about-content">
+                <section class="about-section">
+                    <h2>What is Cronsultant?</h2>
+                    <p>Cronsultant is a terminal-inspired cron expression editor that helps you create, validate, and understand cron expressions with ease. Built with a clean, developer-friendly interface that mimics the terminal experience you know and love.</p>
+                </section>
+
+                <section class="about-section">
+                    <h2>Features</h2>
+                    <ul class="feature-list">
+                        <li><strong>Real-time Validation:</strong> Instant feedback on your cron expressions</li>
+                        <li><strong>Human-readable Descriptions:</strong> See exactly when your cron will run</li>
+                        <li><strong>Timezone Support:</strong> Preview execution times in different timezones</li>
+                        <li><strong>Quick Templates:</strong> Common cron patterns ready to use</li>
+                        <li><strong>Interactive Challenges:</strong> Test your cron knowledge with built-in challenges</li>
+                        <li><strong>Copy to Clipboard:</strong> Easy copying of validated expressions</li>
+                        <li><strong>Dark/Light Themes:</strong> Choose between Monokai and Solarized Light themes</li>
+                    </ul>
+                </section>
+
+                <section class="about-section">
+                    <h2>How to Use</h2>
+                    <ol class="usage-list">
+                        <li>Enter your cron expression in the input field</li>
+                        <li>Watch as it's validated and described in real-time</li>
+                        <li>Use the field labels below to understand each part</li>
+                        <li>Select a timezone to see when it will run</li>
+                        <li>Copy the expression when you're satisfied</li>
+                        <li>Try the templates for common patterns</li>
+                        <li>Challenge yourself with the Lightning Challenges</li>
+                    </ol>
+                </section>
+
+                <section class="about-section">
+                    <h2>Cron Expression Format</h2>
+                    <p>Cron expressions consist of five fields separated by spaces:</p>
+                    <div class="cron-format">
+                        <code>* * * * *</code>
+                        <div class="format-labels">
+                            <span>minute</span>
+                            <span>hour</span>
+                            <span>day</span>
+                            <span>month</span>
+                            <span>weekday</span>
+                        </div>
+                    </div>
+                    <p>Each field can contain:</p>
+                    <ul class="format-options">
+                        <li><code>*</code> - Any value</li>
+                        <li><code>5</code> - Specific value</li>
+                        <li><code>1-5</code> - Range of values</li>
+                        <li><code>1,3,5</code> - List of values</li>
+                        <li><code>*/5</code> - Step values (every 5th)</li>
+                    </ul>
+                </section>
+
+                <section class="about-section">
+                    <h2>Examples</h2>
+                    <div class="examples-grid">
+                        <div class="example-item">
+                            <code>0 9 * * 1-5</code>
+                            <span>Every weekday at 9:00 AM</span>
+                        </div>
+                        <div class="example-item">
+                            <code>*/15 * * * *</code>
+                            <span>Every 15 minutes</span>
+                        </div>
+                        <div class="example-item">
+                            <code>0 0 1 * *</code>
+                            <span>First day of every month at midnight</span>
+                        </div>
+                        <div class="example-item">
+                            <code>30 14 * * 2</code>
+                            <span>Every Tuesday at 2:30 PM</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-section">
+                    <h2>Technology</h2>
+                    <p>Cronsultant is built with vanilla JavaScript, HTML, and CSS. It uses a custom cron parser for validation and description generation, with support for timezone calculations and upcoming execution previews.</p>
+                </section>
+
+                <section class="about-section">
+                    <h2>About the Creator</h2>
+                    <p>Built by <strong>Jodi C. Gabano</strong>, an IT Intern at Tutorials Dojo and BS Computer Science student at the University of the Philippines - Mindanao.</p>
+                    <div class="creator-links">
+                        <span class="creator-prompt">$ find /social -name "jodi*"</span>
+                        <div class="social-links">
+                            <a href="https://github.com/csjodes" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <span class="social-icon">⚡</span>
+                                <span class="social-text">github.com/csjodes</span>
+                            </a>
+                            <a href="https://linkedin.com/in/jodi-gabano" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <span class="social-icon">💼</span>
+                                <span class="social-text">linkedin.com/in/jodi-gabano</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <span class="logo-bracket">[</span>
+                            <span class="logo-text">Cronsultant</span>
+                            <span class="logo-bracket">]</span>
+                        </div>
+                        <p class="footer-tagline">Terminal-based cron expression editor</p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link">Editor</a>
+                    </div>
+                    <div class="footer-right">
+                        <p class="footer-copyright">cronsultant © 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .window-title {
+            font-family: var(--font-mono);
+            font-size: 14px;
+            color: var(--text-secondary);
+            font-weight: 500;
+            display: flex;
+            align-items: center;     
+            justify-content: center;  
+            gap: 12px;              
+            text-align: center;
+        }
+
+        .window-logo {
+            width: 23px;
+            height: 23px;
+        }
+
+        .about-section {
+            margin-bottom: 40px;
+        }
+
+        .about-section h2 {
+            font-family: var(--font-mono);
+            color: var(--text-accent);
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .about-section p {
+            line-height: 1.6;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .feature-list, .usage-list, .format-options {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li, .usage-list li, .format-options li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-primary);
+        }
+
+        .feature-list li:last-child, .usage-list li:last-child, .format-options li:last-child {
+            border-bottom: none;
+        }
+
+        .usage-list {
+            counter-reset: step-counter;
+        }
+
+        .usage-list li {
+            counter-increment: step-counter;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .usage-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 8px;
+            background: var(--text-accent);
+            color: var(--bg-primary);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .cron-format {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .cron-format code {
+            font-family: var(--font-mono);
+            font-size: 2rem;
+            color: var(--text-accent);
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .format-labels {
+            display: flex;
+            justify-content: space-between;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .format-labels span {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .example-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 16px;
+        }
+
+        .example-item code {
+            font-family: var(--font-mono);
+            color: var(--text-accent);
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .example-item span {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .shortcuts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .shortcut-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+        }
+
+        .shortcut-item kbd {
+            background: var(--text-accent);
+            color: var(--bg-primary);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+
+        .shortcut-item span {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Creator Links Styles */
+        .creator-links {
+            margin-top: 20px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .creator-prompt {
+            font-family: var(--font-mono);
+            color: var(--text-accent);
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 12px;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.2s ease;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+        }
+
+        .social-link:hover {
+            background: var(--text-accent);
+            color: var(--bg-primary);
+            border-color: var(--text-accent);
+            transform: translateX(4px);
+        }
+
+        .social-icon {
+            font-size: 1.1rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .social-text {
+            flex: 1;
+        }
+
+        .social-link:hover .social-icon {
+            animation: pulse 0.5s ease-in-out;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                padding: 0 10px;
+            }
+
+            .logo {
+                font-size: 1.7rem;
+            }
+
+            .window-title {
+                font-size: 10px;
+                gap: 5px;              
+            }
+
+            .control-buttons {
+                display: none;
+            }
+
+            .format-labels {
+                flex-wrap: wrap;
+                gap: 8px;
+                justify-content: center;
+            }
+
+            .examples-grid, .shortcuts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cron-format code {
+                font-size: 1.5rem;
+            }
+
+            .social-links {
+                gap: 6px;
+            }
+
+            .social-link {
+                font-size: 0.7rem;
+                padding: 6px 10px;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeToggle = document.getElementById("theme-toggle");
+            const body = document.body;
+            themeToggle.addEventListener("click", function() {
+                if (body.getAttribute("data-theme") === "solarized-light") {
+                    body.setAttribute("data-theme", "monokai");
+                    themeToggle.innerHTML = '<span class="theme-icon">☀️</span>';
+                } else {
+                    body.setAttribute("data-theme", "solarized-light");
+                    themeToggle.innerHTML = '<span class="theme-icon">🌙</span>';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
