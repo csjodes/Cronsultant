@@ -2,7 +2,9 @@
 
 Cronsultant is a lightweight, interactive cron expression assistant built to help users write, understand, and preview cron jobs in real time. Inspired by crontab.guru, it features a clean, terminal-style UI with support for natural language parsing, upcoming execution previews, syntax highlighting, and interactive learning tools.
 
-![Cronsultant](cronsultant-logo.svg)
+<p align="center">
+  <img src="cronsultant cover.png" />
+</p>
 
 ---
 
