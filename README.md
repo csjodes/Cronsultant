@@ -73,8 +73,6 @@ Each field controls a specific unit of time:
 | **List `,`**      | `0 9,17 * * *`      | Multiple values – at 9:00 and 17:00                     |
 | **Range `-`**     | `0 9-17 * * *`      | Range – every hour from 9:00 to 17:00                   |
 | **Step `/`**      | `*/15 * * * *`      | Step – every 15 minutes                                 |
-| **Last `L`**      | `0 0 L * *`         | Last day of the month                                   |
-| **Nth `#`**       | `0 9 * * 1#2`       | Second Monday of the month (weekday 1, occurrence 2)    |
 
 ---
 
